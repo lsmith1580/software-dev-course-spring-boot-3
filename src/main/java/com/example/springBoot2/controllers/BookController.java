@@ -25,7 +25,7 @@ public class BookController {
     }
 
     @PostMapping("/books")
-    public Book addBook(@RequestBody Book book) {
+    public Book createBook(@RequestBody Book book) {
         return bookRepository.save(book);
     }
 
